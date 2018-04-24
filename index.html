@@ -305,13 +305,13 @@
           
             <h3 id="1、什么是margin-collapse"><a href="#1、什么是margin-collapse" class="headerlink" title="1、什么是margin collapse"></a>1、什么是margin collapse</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div1"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">	<span class="attribute">background-color</span>: black;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.div1</span> &#123;</span><br><span class="line">	<span class="attribute">margin-top</span>: <span class="number">50px</span>;</span><br><span class="line">	<span class="attribute">background-color</span>: aqua;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>以为会得到如下结果：<br><img src="margin-collapse/child-expect.png" alt=""></p>
-<p>实际是以下结果：<br><img src="margin-collapse/child-real.png" alt=""></p>
+<p>以为会得到如下结果：<br><img src="/2018/04/24/margin-collapse/child-expect.png" alt=""><br><img src="/2018/04/24/margin-collapse/child-expect.png" title="margin-collapse"></p>
+<p>实际是以下结果：<br><img src="/2018/04/24/margin-collapse/child-real.png" alt=""></p>
 <p>另一种同级元素情况是：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div1"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div1"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.div1</span>&#123;</span><br><span class="line">	<span class="attribute">background-color</span>: black;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">	<span class="attribute">margin-bottom</span>: <span class="number">20px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.div2</span>&#123;</span><br><span class="line">	<span class="attribute">background-color</span>: black;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">	<span class="attribute">margin-top</span>: <span class="number">20px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>以为会得到如下结果：<br><img src="margin-collapse/sibling-expect.png" alt=""></p>
-<p>实际是以下结果：<br><img src="margin-collapse/sibling-real.png" alt=""></p>
+<p>以为会得到如下结果：<br><img src="/2018/04/24/margin-collapse/sibling-expect.png" alt=""></p>
+<p>实际是以下结果：<br><img src="/2018/04/24/margin-collapse/sibling-real.png" alt=""></p>
 <h3 id="2、为什么会出现margin-collapse"><a href="#2、为什么会出现margin-collapse" class="headerlink" title="2、为什么会出现margin collapse"></a>2、为什么会出现margin collapse</h3><p>① 对于有块级子元素的元素计算高度的方式,如果元素没有垂直边框和填充,那其高度就是其子元素顶部和底部边框边缘之间的距离。</p>
 <p>② 对于上下两个并列的div块而言，上面div的margin-bottom和下面div的margin-top会塌陷，也就是会取上下两者margin里最大值作为显示值。</p>
 <h3 id="3、如何解决子父元素margin-collapse"><a href="#3、如何解决子父元素margin-collapse" class="headerlink" title="3、如何解决子父元素margin collapse"></a>3、如何解决子父元素margin collapse</h3><p>1.第一种方法<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">border</span>:<span class="number">1px</span> solid transparent;</span><br><span class="line">  <span class="comment">/*或:border-top:1px solid transparent;*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
@@ -449,15 +449,9 @@
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
 
 
 
