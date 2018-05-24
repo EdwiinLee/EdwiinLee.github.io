@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS禅意花园源码">
+<meta property="og:url" content="http://yoursite.com/2018/05/24/CSS禅意花园源码/index.html">
+<meta property="og:site_name" content="Edwiin&#39;s Blog">
+<meta property="og:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-05-24T00:49:39.050Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSS禅意花园源码">
+<meta name="twitter:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/05/24/CSS禅意花园源码/"/>
+
+
+
+
+
+  <title>CSS禅意花园源码 | Edwiin's Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Edwiin's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">永远保持学习的动力</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/24/CSS禅意花园源码/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Edwiin Lee">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Edwiin's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">CSS禅意花园源码</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-24T08:47:54+08:00">
+                2018-05-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  </span></span><br><span class="line"><span class="meta">    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;</span>  </span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">xmlns</span>=<span class="string">"http://www.w3.org/1999/xhtml"</span> <span class="attr">xml:lang</span>=<span class="string">"en"</span> &gt;</span>  </span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"content-type"</span> <span class="attr">content</span>=<span class="string">"text/html; charset=iso-8859-1"</span> /&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"author"</span> <span class="attr">content</span>=<span class="string">"Dave Shea"</span> /&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"keywords"</span> <span class="attr">content</span>=<span class="string">"design, css, cascading, style, sheets, xhtml, graphic design, w3c, web standards, visual, display"</span> /&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"description"</span> <span class="attr">content</span>=<span class="string">"A demonstration of what can be accomplished visually through CSS-based design."</span> /&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"robots"</span> <span class="attr">content</span>=<span class="string">"all"</span> /&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>css Zen Garden: The Beauty in CSS Design<span class="tag">&lt;/<span class="name">title</span>&gt;</span>  </span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- to correct the unsightly Flash of Unstyled Content. http://www.bluerobot.com/web/css/fouc.asp --&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>  </span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span> <span class="attr">title</span>=<span class="string">"currentStyle"</span> <span class="attr">media</span>=<span class="string">"screen"</span>&gt;</span><span class="undefined">  </span></span><br><span class="line"><span class="undefined">        @import "/001/001.css";  </span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"Shortcut Icon"</span> <span class="attr">type</span>=<span class="string">"image/x-icon"</span> <span class="attr">href</span>=<span class="string">"http://www.csszengarden.com/favicon.ico"</span> /&gt;</span>     </span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"alternate"</span> <span class="attr">type</span>=<span class="string">"application/rss+xml"</span> <span class="attr">title</span>=<span class="string">"RSS"</span> <span class="attr">href</span>=<span class="string">"http://www.csszengarden.com/zengarden.xml"</span> /&gt;</span>  </span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span>  </span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--  </span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    This xhtml document is marked up to provide the designer with the maximum possible flexibility.  </span></span><br><span class="line"><span class="comment">    There are more classes and extraneous tags than needed, and in a real world situation, it's more  </span></span><br><span class="line"><span class="comment">    likely that it would be much leaner.  </span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    However, I think we can all agree that even given that, we're still better off than if this had been  </span></span><br><span class="line"><span class="comment">    built with tables.  </span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">--&gt;</span>  </span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">id</span>=<span class="string">"css-zen-garden"</span>&gt;</span>  </span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"container"</span>&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"intro"</span>&gt;</span>  </span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"pageHeader"</span>&gt;</span>  </span><br><span class="line">            <span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>css Zen Garden<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span>  </span><br><span class="line">            <span class="tag">&lt;<span class="name">h2</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>The Beauty of <span class="tag">&lt;<span class="name">acronym</span> <span class="attr">title</span>=<span class="string">"Cascading Style Sheets"</span>&gt;</span>CSS<span class="tag">&lt;/<span class="name">acronym</span>&gt;</span> Design<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">h2</span>&gt;</span>  </span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>  </span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"quickSummary"</span>&gt;</span>  </span><br><span class="line">            <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"p1"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>A demonstration of what can be accomplished visually through <span class="tag">&lt;<span class="name">acronym</span> <span class="attr">title</span>=<span class="string">"Cascading Style Sheets"</span>&gt;</span>CSS<span class="tag">&lt;/<span class="name">acronym</span>&gt;</span>-based design. Select any style sheet from the list to load it into this page.<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span>  </span><br><span class="line">            <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"p2"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>Download the sample <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"/zengarden-sample.html"</span> <span class="attr">title</span>=<span class="string">"This page's source HTML code, not to be modified."</span>&gt;</span>html file<span class="tag">&lt;/<span class="name">a</span>&gt;</span> and <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"/zengarden-sample.css"</span> <span class="attr">title</span>=<span class="string">"This page's sample CSS, the file you may modify."</span>&gt;</span>css file<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span>  </span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>  </span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"preamble"</span>&gt;</span>  </span><br><span class="line">            <span class="tag">&lt;<span class="name">h3</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>The Road to Enlightenment<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">h3</span>&gt;</span>  </span><br><span class="line">            <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"p1"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>Littering a dark and dreary road lay the past relics of browser-specific tags, incompatible <span class="tag">&lt;<span class="name">acronym</span> <span class="attr">title</span>=<span class="string">"Document Object Model"</span>&gt;</span>DOM<span class="tag">&lt;/<span class="name">acronym</span>&gt;</span>s, and broken <span class="tag">&lt;<span class="name">acronym</span> <span class="attr">title</span>=<span class="string">"Cascading Style Sheets"</span>&gt;</span>CSS<span class="tag">&lt;/<span class="name">acronym</span>&gt;</span> support.<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span>  </span><br><span class="line">            <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"p2"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>Today, we must clear the mind of past practices. Web enlightenment has been achieved thanks to the tireless efforts of folk like the <span class="tag">&lt;<span class="name">acronym</span> <span class="attr">title</span>=<span class="string">"World Wide Web Consortium"</span>&gt;</span>W3C<span class="tag">&lt;/<span class="name">acronym</span>&gt;</span>, <span class="tag">&lt;<span class="name">acronym</span> <span class="attr">title</span>=<span class="string">"Web Standards Project"</span>&gt;</span>WaSP<span class="tag">&lt;/<span class="name">acronym</span>&gt;</span> and the major browser creators.<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span>  </span><br><span class="line">            <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"p3"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>The css Zen Garden invites you to relax and meditate on the important lessons of the masters. Begin to see with clarity. Learn to use the (yet to be) time-honored techniques in new and invigorating fashion. Become one with the web.<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span>  </span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span>  </span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"supportingText"</span>&gt;</span>  </span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"explanation"</span>&gt;</span>  </span><br><span class="line">            <span class="tag">&lt;<span class="name">h3</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>So What is This About?<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">h3</span>&gt;</span>  </span><br><span class="line">            <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"p1"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>There is clearly a need for <span class="tag">&lt;<span class="name">acronym</span> <span class="attr">title</span>=<span class="string">"Cascading Style Sheets"</span>&gt;</span>CSS<span class="tag">&lt;/<span class="name">acronym</span>&gt;</span> to be taken seriously by graphic artists. The Zen Garden aims to excite, inspire, and encourage participation. To begin, view some of the existing designs in the list. Clicking on any one will load the style sheet into this very page. The code remains the same, the only thing that has changed is the external .css file. Yes, really.<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span>  </span><br><span class="line">            <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"p2"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">acronym</span> <span class="attr">title</span>=<span class="string">"Cascading Style Sheets"</span>&gt;</span>CSS<span class="tag">&lt;/<span class="name">acronym</span>&gt;</span> allows complete and total control over the style of a hypertext document. The only way this can be illustrated in a way that gets people excited is by demonstrating what it can truly be, once the reins are placed in the hands of those able to create beauty from structure. To date, most examples of neat tricks and hacks have been demonstrated by structurists and coders. Designers have yet to make their mark. This needs to change.<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span>  </span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>  </span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"participation"</span>&gt;</span>  </span><br><span class="line">            <span class="tag">&lt;<span class="name">h3</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>Participation<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">h3</span>&gt;</span>  </span><br><span class="line">            <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"p1"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>Graphic artists only please. You are modifying this page, so strong <span class="tag">&lt;<span class="name">acronym</span> <span class="attr">title</span>=<span class="string">"Cascading Style Sheets"</span>&gt;</span>CSS<span class="tag">&lt;/<span class="name">acronym</span>&gt;</span> skills are necessary, but the example files are commented well enough that even <span class="tag">&lt;<span class="name">acronym</span> <span class="attr">title</span>=<span class="string">"Cascading Style Sheets"</span>&gt;</span>CSS<span class="tag">&lt;/<span class="name">acronym</span>&gt;</span> novices can use them as starting points. Please see the <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.mezzoblue.com/zengarden/resources/"</span> <span class="attr">title</span>=<span class="string">"A listing of CSS-related resources"</span>&gt;</span><span class="tag">&lt;<span class="name">acronym</span> <span class="attr">title</span>=<span class="string">"Cascading Style Sheets"</span>&gt;</span>CSS<span class="tag">&lt;/<span class="name">acronym</span>&gt;</span> Resource Guide<span class="tag">&lt;/<span class="name">a</span>&gt;</span> for advanced tutorials and tips on working with <span class="tag">&lt;<span class="name">acronym</span> <span class="attr">title</span>=<span class="string">"Cascading Style Sheets"</span>&gt;</span>CSS<span class="tag">&lt;/<span class="name">acronym</span>&gt;</span>.<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span>  </span><br><span class="line">            <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"p2"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>You may modify the style sheet in any way you wish, but not the <span class="tag">&lt;<span class="name">acronym</span> <span class="attr">title</span>=<span class="string">"HyperText Markup Language"</span>&gt;</span>HTML<span class="tag">&lt;/<span class="name">acronym</span>&gt;</span>. This may seem daunting at first if you&amp;#8217;ve never worked this way before, but follow the listed links to learn more, and use the sample files as a guide.<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span>  </span><br><span class="line">            <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"p3"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>Download the sample <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"/zengarden-sample.html"</span> <span class="attr">title</span>=<span class="string">"This page's source HTML code, not to be modified."</span>&gt;</span>html file<span class="tag">&lt;/<span class="name">a</span>&gt;</span> and <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"/zengarden-sample.css"</span> <span class="attr">title</span>=<span class="string">"This page's sample CSS, the file you may modify."</span>&gt;</span>css file<span class="tag">&lt;/<span class="name">a</span>&gt;</span> to work on a copy locally. Once you have completed your masterpiece (and please, don&amp;#8217;t submit half-finished work) upload your .css file to a web server under your control. <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.mezzoblue.com/zengarden/submit/"</span> <span class="attr">title</span>=<span class="string">"Use the contact form to send us your CSS file"</span>&gt;</span>Send us a link<span class="tag">&lt;/<span class="name">a</span>&gt;</span> to the file and if we choose to use it, we will spider the associated images. Final submissions will be placed on our server.<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span>  </span><br><span class="line">                    <span class="tag">&lt;/<span class="name">div</span>&gt;</span>  </span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"benefits"</span>&gt;</span>  </span><br><span class="line">            <span class="tag">&lt;<span class="name">h3</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>Benefits<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">h3</span>&gt;</span>  </span><br><span class="line">            <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"p1"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>Why participate? For recognition, inspiration, and a resource we can all refer to when making the case for <span class="tag">&lt;<span class="name">acronym</span> <span class="attr">title</span>=<span class="string">"Cascading Style Sheets"</span>&gt;</span>CSS<span class="tag">&lt;/<span class="name">acronym</span>&gt;</span>-based design. This is sorely needed, even today. More and more major sites are taking the leap, but not enough have. One day this gallery will be a historical curiosity; that day is not today.<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span>  </span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>  </span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"requirements"</span>&gt;</span>  </span><br><span class="line">            <span class="tag">&lt;<span class="name">h3</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>Requirements<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">h3</span>&gt;</span>  </span><br><span class="line">            <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"p1"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>We would like to see as much <span class="tag">&lt;<span class="name">acronym</span> <span class="attr">title</span>=<span class="string">"Cascading Style Sheets, version 1"</span>&gt;</span>CSS1<span class="tag">&lt;/<span class="name">acronym</span>&gt;</span> as possible. <span class="tag">&lt;<span class="name">acronym</span> <span class="attr">title</span>=<span class="string">"Cascading Style Sheets, version 2"</span>&gt;</span>CSS2<span class="tag">&lt;/<span class="name">acronym</span>&gt;</span> should be limited to widely-supported elements only. The css Zen Garden is about functional, practical <span class="tag">&lt;<span class="name">acronym</span> <span class="attr">title</span>=<span class="string">"Cascading Style Sheets"</span>&gt;</span>CSS<span class="tag">&lt;/<span class="name">acronym</span>&gt;</span> and not the latest bleeding-edge tricks viewable by 2% of the browsing public. The only real requirement we have is that your <span class="tag">&lt;<span class="name">acronym</span> <span class="attr">title</span>=<span class="string">"Cascading Style Sheets"</span>&gt;</span>CSS<span class="tag">&lt;/<span class="name">acronym</span>&gt;</span> validates.<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span>  </span><br><span class="line">            <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"p2"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>Unfortunately, designing this way highlights the flaws in the various implementations of <span class="tag">&lt;<span class="name">acronym</span> <span class="attr">title</span>=<span class="string">"Cascading Style Sheets"</span>&gt;</span>CSS<span class="tag">&lt;/<span class="name">acronym</span>&gt;</span>. Different browsers display differently, even completely valid <span class="tag">&lt;<span class="name">acronym</span> <span class="attr">title</span>=<span class="string">"Cascading Style Sheets"</span>&gt;</span>CSS<span class="tag">&lt;/<span class="name">acronym</span>&gt;</span> at times, and this becomes maddening when a fix for one leads to breakage in another. View the <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.mezzoblue.com/zengarden/resources/"</span> <span class="attr">title</span>=<span class="string">"A listing of CSS-related resources"</span>&gt;</span>Resources<span class="tag">&lt;/<span class="name">a</span>&gt;</span> page for information on some of the fixes available. Full browser compliance is still sometimes a pipe dream, and we do not expect you to come up with pixel-perfect code across every platform. But do test in as many as you can. If your design doesn&amp;#8217;t work in at least IE5+/Win and Mozilla (run by over 90% of the population), chances are we won&amp;#8217;t accept it.<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span>  </span><br><span class="line">            <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"p3"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>We ask that you submit original artwork. Please respect copyright laws. Please keep objectionable material to a minimum; tasteful nudity is acceptable, outright pornography will be rejected.<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span>  </span><br><span class="line">            <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"p4"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>This is a learning exercise as well as a demonstration. You retain full copyright on your graphics (with limited exceptions, see <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.mezzoblue.com/zengarden/submit/guidelines/"</span>&gt;</span>submission guidelines<span class="tag">&lt;/<span class="name">a</span>&gt;</span>), but we ask you release your <span class="tag">&lt;<span class="name">acronym</span> <span class="attr">title</span>=<span class="string">"Cascading Style Sheets"</span>&gt;</span>CSS<span class="tag">&lt;/<span class="name">acronym</span>&gt;</span> under a Creative Commons license identical to the <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://creativecommons.org/licenses/by-nc-sa/1.0/"</span> <span class="attr">title</span>=<span class="string">"View the Zen Garden's license information."</span>&gt;</span>one on this site<span class="tag">&lt;/<span class="name">a</span>&gt;</span> so that others may learn from your work.<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span>  </span><br><span class="line">            <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"p5"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>Bandwidth graciously donated by <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.mediatemple.net/"</span>&gt;</span>mediatemple<span class="tag">&lt;/<span class="name">a</span>&gt;</span>. Now available: <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.amazon.com/exec/obidos/ASIN/0321303474/mezzoblue-20/"</span>&gt;</span>Zen Garden, the book<span class="tag">&lt;/<span class="name">a</span>&gt;</span>.<span class="tag">&lt;/<span class="name">span</span>&gt;</span>&amp;nbsp;<span class="tag">&lt;/<span class="name">p</span>&gt;</span>  </span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>  </span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"footer"</span>&gt;</span>  </span><br><span class="line">            <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://validator.w3.org/check/referer"</span> <span class="attr">title</span>=<span class="string">"Check the validity of this site&amp;#8217;s XHTML"</span>&gt;</span>xhtml<span class="tag">&lt;/<span class="name">a</span>&gt;</span> &amp;nbsp;   </span><br><span class="line">            <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://jigsaw.w3.org/css-validator/check/referer"</span> <span class="attr">title</span>=<span class="string">"Check the validity of this site&amp;#8217;s CSS"</span>&gt;</span>css<span class="tag">&lt;/<span class="name">a</span>&gt;</span> &amp;nbsp;   </span><br><span class="line">            <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://creativecommons.org/licenses/by-nc-sa/1.0/"</span> <span class="attr">title</span>=<span class="string">"View details of the license of this site, courtesy of Creative Commons."</span>&gt;</span>cc<span class="tag">&lt;/<span class="name">a</span>&gt;</span> &amp;nbsp;  </span><br><span class="line">            <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://mezzoblue.com/zengarden/faq/#s508"</span> <span class="attr">title</span>=<span class="string">"Read about the accessibility of this site"</span>&gt;</span>508<span class="tag">&lt;/<span class="name">a</span>&gt;</span> &amp;nbsp;  </span><br><span class="line">            <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.mezzoblue.com/zengarden/faq/#aaa"</span> <span class="attr">title</span>=<span class="string">"Read about the accessibility of this site"</span>&gt;</span>aaa<span class="tag">&lt;/<span class="name">a</span>&gt;</span>  </span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>  </span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span>  </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"linkList"</span>&gt;</span>  </span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"linkList2"</span>&gt;</span>  </span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"lselect"</span>&gt;</span>  </span><br><span class="line">                <span class="tag">&lt;<span class="name">h3</span> <span class="attr">class</span>=<span class="string">"select"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>Select a Design:<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">h3</span>&gt;</span>  </span><br><span class="line">                <span class="tag">&lt;<span class="name">ul</span>&gt;</span>  </span><br><span class="line">                    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"?cssfile=/213/213.css&amp;amp;page=0"</span> <span class="attr">title</span>=<span class="string">"AccessKey: a"</span> <span class="attr">accesskey</span>=<span class="string">"a"</span>&gt;</span>Under the Sea!<span class="tag">&lt;/<span class="name">a</span>&gt;</span> by <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.ericstoltz.com/"</span> <span class="attr">class</span>=<span class="string">"c"</span>&gt;</span>Eric Stoltz<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span>  </span><br><span class="line">                    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"?cssfile=/212/212.css&amp;amp;page=0"</span> <span class="attr">title</span>=<span class="string">"AccessKey: b"</span> <span class="attr">accesskey</span>=<span class="string">"b"</span>&gt;</span>Make &amp;#8217;em Proud<span class="tag">&lt;/<span class="name">a</span>&gt;</span> by <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://skybased.com/"</span> <span class="attr">class</span>=<span class="string">"c"</span>&gt;</span>Michael McAghon and Scotty Reifsnyder<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span>  </span><br><span class="line">                    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"?cssfile=/211/211.css&amp;amp;page=0"</span> <span class="attr">title</span>=<span class="string">"AccessKey: c"</span> <span class="attr">accesskey</span>=<span class="string">"c"</span>&gt;</span>Orchid Beauty<span class="tag">&lt;/<span class="name">a</span>&gt;</span> by <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.kevinaddison.com/"</span> <span class="attr">class</span>=<span class="string">"c"</span>&gt;</span>Kevin Addison<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span>  </span><br><span class="line">                    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"?cssfile=/210/210.css&amp;amp;page=0"</span> <span class="attr">title</span>=<span class="string">"AccessKey: d"</span> <span class="attr">accesskey</span>=<span class="string">"d"</span>&gt;</span>Oceanscape<span class="tag">&lt;/<span class="name">a</span>&gt;</span> by <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.pixel-house.com.au/"</span> <span class="attr">class</span>=<span class="string">"c"</span>&gt;</span>Justin Gray<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span>  </span><br><span class="line">                    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"?cssfile=/209/209.css&amp;amp;page=0"</span> <span class="attr">title</span>=<span class="string">"AccessKey: e"</span> <span class="attr">accesskey</span>=<span class="string">"e"</span>&gt;</span>CSS Co., Ltd.<span class="tag">&lt;/<span class="name">a</span>&gt;</span> by <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.benklemm.de/"</span> <span class="attr">class</span>=<span class="string">"c"</span>&gt;</span>Benjamin Klemm<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span>  </span><br><span class="line">                    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"?cssfile=/208/208.css&amp;amp;page=0"</span> <span class="attr">title</span>=<span class="string">"AccessKey: f"</span> <span class="attr">accesskey</span>=<span class="string">"f"</span>&gt;</span>Sakura<span class="tag">&lt;/<span class="name">a</span>&gt;</span> by <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.re-bloom.com/"</span> <span class="attr">class</span>=<span class="string">"c"</span>&gt;</span>Tatsuya Uchida<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span>  </span><br><span class="line">                    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"?cssfile=/207/207.css&amp;amp;page=0"</span> <span class="attr">title</span>=<span class="string">"AccessKey: g"</span> <span class="attr">accesskey</span>=<span class="string">"g"</span>&gt;</span>Kyoto Forest<span class="tag">&lt;/<span class="name">a</span>&gt;</span> by <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://rpmdesignfactory.com/"</span> <span class="attr">class</span>=<span class="string">"c"</span>&gt;</span>John Politowski<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span>  </span><br><span class="line">                    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"?cssfile=/206/206.css&amp;amp;page=0"</span> <span class="attr">title</span>=<span class="string">"AccessKey: h"</span> <span class="attr">accesskey</span>=<span class="string">"h"</span>&gt;</span>A Walk in the Garden<span class="tag">&lt;/<span class="name">a</span>&gt;</span> by <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://users.skynet.be/bk316398/temp.html"</span> <span class="attr">class</span>=<span class="string">"c"</span>&gt;</span>Simon Van Hauwermeiren<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span>  </span><br><span class="line">                <span class="tag">&lt;/<span class="name">ul</span>&gt;</span>  </span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span>  </span><br><span class="line"></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"larchives"</span>&gt;</span>  </span><br><span class="line">                <span class="tag">&lt;<span class="name">h3</span> <span class="attr">class</span>=<span class="string">"archives"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>Archives:<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">h3</span>&gt;</span>  </span><br><span class="line">                <span class="tag">&lt;<span class="name">ul</span>&gt;</span>  </span><br><span class="line">                    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"/?cssfile=/001/001.css&amp;amp;page=1"</span> <span class="attr">title</span>=<span class="string">"View next set of designs. AccessKey: n"</span> <span class="attr">accesskey</span>=<span class="string">"n"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"accesskey"</span>&gt;</span>n<span class="tag">&lt;/<span class="name">span</span>&gt;</span>ext designs &amp;raquo;<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span>  </span><br><span class="line">                    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.mezzoblue.com/zengarden/alldesigns/"</span> <span class="attr">title</span>=<span class="string">"View every submission to the Zen Garden. AccessKey: w"</span> <span class="attr">accesskey</span>=<span class="string">"w"</span>&gt;</span>Vie<span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"accesskey"</span>&gt;</span>w<span class="tag">&lt;/<span class="name">span</span>&gt;</span> All Designs<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span>  </span><br><span class="line">                <span class="tag">&lt;/<span class="name">ul</span>&gt;</span>  </span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span>  </span><br><span class="line"></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"lresources"</span>&gt;</span>  </span><br><span class="line">                <span class="tag">&lt;<span class="name">h3</span> <span class="attr">class</span>=<span class="string">"resources"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>Resources:<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">h3</span>&gt;</span>  </span><br><span class="line">                <span class="tag">&lt;<span class="name">ul</span>&gt;</span>  </span><br><span class="line">                    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"/001/001.css"</span> <span class="attr">title</span>=<span class="string">"View the source CSS file for the currently-viewed design, AccessKey: v"</span> <span class="attr">accesskey</span>=<span class="string">"v"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"accesskey"</span>&gt;</span>V<span class="tag">&lt;/<span class="name">span</span>&gt;</span>iew This Design&amp;#8217;s <span class="tag">&lt;<span class="name">acronym</span> <span class="attr">title</span>=<span class="string">"Cascading Style Sheets"</span>&gt;</span>CSS<span class="tag">&lt;/<span class="name">acronym</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span>                  <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.mezzoblue.com/zengarden/resources/"</span> <span class="attr">title</span>=<span class="string">"Links to great sites with information on using CSS. AccessKey: r"</span> <span class="attr">accesskey</span>=<span class="string">"r"</span>&gt;</span><span class="tag">&lt;<span class="name">acronym</span> <span class="attr">title</span>=<span class="string">"Cascading Style Sheets"</span>&gt;</span>CSS<span class="tag">&lt;/<span class="name">acronym</span>&gt;</span> <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"accesskey"</span>&gt;</span>R<span class="tag">&lt;/<span class="name">span</span>&gt;</span>esources<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span>  </span><br><span class="line">                    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.mezzoblue.com/zengarden/faq/"</span> <span class="attr">title</span>=<span class="string">"A list of Frequently Asked Questions about the Zen Garden. AccessKey: q"</span> <span class="attr">accesskey</span>=<span class="string">"q"</span>&gt;</span><span class="tag">&lt;<span class="name">acronym</span> <span class="attr">title</span>=<span class="string">"Frequently Asked Questions"</span>&gt;</span>FA<span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"accesskey"</span>&gt;</span>Q<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">acronym</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span>  </span><br><span class="line">                    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.mezzoblue.com/zengarden/submit/"</span> <span class="attr">title</span>=<span class="string">"Send in your own CSS file. AccessKey: s"</span> <span class="attr">accesskey</span>=<span class="string">"s"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"accesskey"</span>&gt;</span>S<span class="tag">&lt;/<span class="name">span</span>&gt;</span>ubmit a Design<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span>  </span><br><span class="line">                    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.mezzoblue.com/zengarden/translations/"</span> <span class="attr">title</span>=<span class="string">"View translated versions of this page. AccessKey: t"</span> <span class="attr">accesskey</span>=<span class="string">"t"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"accesskey"</span>&gt;</span>T<span class="tag">&lt;/<span class="name">span</span>&gt;</span>ranslations<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span>  </span><br><span class="line">                <span class="tag">&lt;/<span class="name">ul</span>&gt;</span>  </span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span>  </span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span>  </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span>  </span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- These extra divs/spans may be used as catch-alls to add extra imagery. --&gt;</span>  </span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"extraDiv1"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"extraDiv2"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"extraDiv3"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"extraDiv4"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"extraDiv5"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"extraDiv6"</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span>  </span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/05/23/CSS选择器权重计算规则/" rel="next" title="CSS选择器权重计算规则">
+                <i class="fa fa-chevron-left"></i> CSS选择器权重计算规则
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Edwiin Lee</p>
+              <p class="site-description motion-element" itemprop="description">日月同行，星光为伴</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Edwiin Lee</span>
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
